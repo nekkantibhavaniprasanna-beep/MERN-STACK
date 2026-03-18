@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Factorial and Fibonacci</title>
+</head>
+
+<body>
+
+<h2>JavaScript Functions Example</h2>
+
+<script>
+
+// Factorial Function
+function factorial(n)
+{
+let fact = 1;
+
+for(let i=1;i<=n;i++)
+{
+fact = fact * i;
+}
+
+return fact;
+}
+
+// Fibonacci Function
+function fibonacci(n)
+{
+let a = 0, b = 1;
+
+document.write("Fibonacci Series: ");
+
+for(let i=1;i<=n;i++)
+{
+document.write(a + " ");
+let temp = a + b;
+a = b;
+b = temp;
+}
+}
+
+var num = 5;
+
+document.write("Factorial of " + num + " = " + factorial(num));
+document.write("<br><br>");
+
+fibonacci(10);
+
+</script>
+
+</body>
+</html>

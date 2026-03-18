@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Largest Number</title>
+</head>
+
+<body>
+
+<h2>Largest of Three Numbers</h2>
+
+<script>
+
+var a = parseInt(prompt("Enter first number"));
+var b = parseInt(prompt("Enter second number"));
+var c = parseInt(prompt("Enter third number"));
+
+if(a==b && b==c)
+{
+document.write("All numbers are equal");
+}
+else
+{
+var max = Math.max(a,b,c);
+document.write("Largest number is: " + max);
+}
+
+</script>
+
+</body>
+</html>
